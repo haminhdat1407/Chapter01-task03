@@ -1,0 +1,42 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    color: #fff;
+    margin-top: 16px;
+    padding-bottom: 59px;
+
+
+    &__infor {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 118px;
+    }
+
+    &__left {
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        color: rgb(40, 40, 40);
+        transform: translateY(-6px);
+        letter-spacing: 1.5px;
+    }
+
+    &__right {
+        img {
+            margin-left: 28px;
+            margin-top: 1px;
+            display: block;
+        }
+    }
+
+    &__textlogo {
+        font-size: 1.2rem;
+        color: rgb(40, 40, 40);
+        line-height: 2;
+        letter-spacing: 1.4px;
+        margin-top: 5px;
+    }
+}

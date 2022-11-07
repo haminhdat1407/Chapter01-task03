@@ -1,0 +1,25 @@
+/*------------------------------------------------------------
+line
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-line {
+    height: 2px;
+    width: 60px;
+    background: #000;
+    display: block;
+    transform: translateX(-2px);
+    margin: 10px auto;
+}
+
+.c-linepoint {
+    height: 2px;
+    width: 35px;
+    background: #000;
+    display: block;
+    transform: translateX(-2px);
+    margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
