@@ -35,9 +35,7 @@ Css of home page
 .c-top {
     background-color: #fff;
 
-    @include sp {
-        padding: 15px;
-    }
+
 }
 
 
@@ -170,6 +168,7 @@ Css of home page
         @include sp {
             margin-top: 19px;
             padding-bottom: 0;
+            margin-bottom: 25px;
         }
     }
 
@@ -549,11 +548,19 @@ Css of home page
     background-color: #f7f6f0;
 
     .c-content {
-        font-size: 1.3rem;
+        font-size: 1.3rem;    /* display: block; */
+        margin-top: -7px;
+        line-height: 1.7;
+        letter-spacing: 1.3px;
+           
+
     }
 
     &__once {
         padding-top: 88px;
+        @include sp {
+            padding-top: 13px;
+        }
     }
 
     &__title {
@@ -573,11 +580,19 @@ Css of home page
 
         @include sp {
             flex-direction: column;
+            margin-top: 18px;
         }
     }
 
     &__img {
         position: relative;
+
+        img {
+            border-radius: 30px;
+            @include sp {
+                border-radius: 16px;
+            }
+        }
     }
 
     &__btn {
@@ -589,6 +604,7 @@ Css of home page
 
     &__store {
         font-size: 3rem;
+        margin-left: 4px;
         color: rgb(23, 107, 106);
         margin-top: 103px;
         letter-spacing: 3px;
@@ -596,9 +612,18 @@ Css of home page
         justify-content: center;
 
         @include sp {
-            font-size: 1.8rem;
             text-align: center;
+            font-size: 1.8rem;
+            line-height: 1.7;
+            letter-spacing: 1.7px;
+            margin-top: -5px;
+            width: 100%;
+            margin-left: 0;
         }
+    }
+
+    &__storetext {
+        margin-right: 8px;
     }
 }
 
@@ -606,6 +631,9 @@ Css of home page
 .c-pointleft {
     padding: 11px;
     margin-right: 17px;
+    @include sp {
+        margin-right: 3px;
+    }
 
     .c-pointtext {
         font-size: 2.2rem;
@@ -613,6 +641,9 @@ Css of home page
 
         @include sp {
             font-size: 1.6rem;
+            margin-left: -11px;
+            margin-top: 3px;
+    
         }
 
     }
@@ -629,7 +660,8 @@ Css of home page
 
         @include sp {
             font-size: 2rem;
-            margin-top: 33px;
+            margin-top: 24px;
+            letter-spacing: 2px;
         }
     }
 
@@ -665,7 +697,7 @@ Css of home page
         display: flex;
         margin-top: 21px;
         padding: 0 15px;
-        row-gap: 19px;
+        row-gap: 23px;
     }
 
     img {
@@ -675,6 +707,7 @@ Css of home page
 
         @include sp {
             width: calc(50% - 12px);
+            border-radius: 10px;
         }
     }
 }
@@ -744,6 +777,7 @@ Css of home page
             transform: translate(1px, -1px);
             letter-spacing: 2.7px;
             font-size: 2rem;
+            margin-top: 18px;
         }
     }
 
