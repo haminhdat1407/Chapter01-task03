@@ -18,7 +18,7 @@ body {
     // margin-left: 370px;
 }
 
-.c-wrapper {
+.l-wrapper {
     margin: 0 auto;
     position: relative;
     max-width: 1030px;
@@ -28,13 +28,29 @@ body {
         max-width: 345px;
     }
 
-    &__pointfooter {
-        margin: 0 auto;
-        position: relative;
-        max-width: 1100px;
-        @include sp{
-            max-width: 375px ;
-        }
-    }
+   
 
 }
+
+.c-pointfooter {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1100px;
+    @include sp {
+        max-width: 375px;
+    }
+
+    .c-textsp {
+        @include sp { 
+            display: contents;
+        }
+    }
+}
+
+// .c-column {
+//     &__banner {
+//         .sp-only {
+//             position: relative;
+//         }
+//     }
+// }

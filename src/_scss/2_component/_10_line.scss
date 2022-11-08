@@ -11,6 +11,11 @@ line
     display: block;
     transform: translateX(-2px);
     margin: 10px auto;
+    @include sp {
+        width: 42px;
+        margin-top: 19px;
+        transform: translateX(0);
+    }
 }
 
 .c-linepoint {
