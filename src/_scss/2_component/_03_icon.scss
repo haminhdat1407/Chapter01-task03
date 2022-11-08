@@ -9,3 +9,14 @@ icon
     right: 0;
     top: 42%;
 }
+
+.c-iconarrow {
+    width: 35px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

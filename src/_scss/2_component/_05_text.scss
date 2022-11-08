@@ -4,13 +4,60 @@ text
 
 /*
 ------------------------------------------------------------*/
-.c-text {
-    font-size: 1.2rem;
+.c-point {
+    .c-text {
+        font-size: 1.2rem;
+        color: rgb(51, 51, 51);
+        line-height: 2.1;
+        padding-top: 42px;
+        padding-bottom: 102px;
+        letter-spacing: 1.4px;
+        display: flex;
+        justify-content: center;
+
+        @include sp {
+            font-size: 1.3rem;
+            margin-top: 18px;
+            letter-spacing: 1px;
+            line-height: 1.8;
+            text-align: center;
+        }
+    }
+
+}
+
+.c-textbanner {
+
+    position: absolute;
+    top: 64px;
     color: rgb(51, 51, 51);
-    line-height: 2.1;
-    padding-top: 42px;
-    padding-bottom: 102px;
-    letter-spacing: 1.4px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    p:nth-child(1) {
+        font-size: 1.4rem;
+    }
+
+    p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+}
+
+
+.c-columnitem {
+    .c-textlink {
+        @include sp {
+            text-decoration: underline;
+            font-size: 1.6rem;
+            display: block;
+            margin-left: auto;
+            max-width: 68px;
+            font-size: 1.3rem;
+            color: rgb(23, 107, 106);
+            text-align: right;
+            margin-top: 14px;
+        }
+    }
 }

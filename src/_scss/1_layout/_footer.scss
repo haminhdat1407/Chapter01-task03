@@ -11,6 +11,9 @@ footer
         display: flex;
         justify-content: space-between;
         margin-top: 118px;
+        @include sp {
+            display: block;
+        }
     }
 
     &__left {
@@ -22,13 +25,24 @@ footer
         color: rgb(40, 40, 40);
         transform: translateY(-6px);
         letter-spacing: 1.5px;
+        @include sp {
+            font-size: 1.3rem;
+        }
     }
 
     &__right {
+        @include sp {
+            text-align: center;
+            margin-top: 60px;
+        }
+
         img {
             margin-left: 28px;
             margin-top: 1px;
             display: block;
+            @include sp {
+                margin: auto;
+            }
         }
     }
 
