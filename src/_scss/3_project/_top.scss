@@ -787,6 +787,7 @@ Css of home page
 
         @include sp {
             padding: 0;
+            margin-top: -23px;
         }
     }
 
@@ -795,7 +796,7 @@ Css of home page
             margin-top: 42px;
         }
 
-        margin-top: 46px;
+        margin-top: 26px;
 
         &__title {
             display: flex;
@@ -813,8 +814,15 @@ Css of home page
             @include sp {
                 font-size: 1.3rem;
                 line-height: 1.6;
-                letter-spacing: 0.8px;
+                letter-spacing: 1.2px;
+                transform: translate(1px, -1px);
+                margin-top: 5px;
+            }
+        }
 
+        &__contenttwo {
+            @include sp {
+                margin-top: 10px;
             }
         }
     }
@@ -837,12 +845,13 @@ Css of home page
         letter-spacing: 1.4px;
 
         @include sp {
-            margin-top: 0;
+            margin-top: 2px;
             font-size: 1.3rem;
             letter-spacing: 1.3px;
             margin-bottom: 1px;
-            margin-left: 8px;
-            line-height: 1.6;
+            margin-left: 10px;
+            line-height: 1.7;
+    
         }
     }
 
@@ -858,10 +867,10 @@ Css of home page
             position: relative;
         }
 
-        img {
-            border-radius: 50px;
+        // img {
+        //     border-radius: 50px;
 
-        }
+        // }
     }
 
     &__heading {
