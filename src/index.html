@@ -1,0 +1,801 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page">
+  <!-- @@meta -->
+
+  <!-- @content -->
+
+
+
+  <main class="p-top">
+    <!-- LEAF -->
+    <div class="c-leaf is-active ">
+      <img class="c-leaftop " src="assets/img/leaf.png" alt="Leaf">
+      <img class="c-leafright " src="assets/img/leaf-right.png" alt="Leaf">
+    </div>
+    <!-- DROP -->
+    <div class="c-drop is-active pc-only">
+      <img src="assets/img/drop6.png" alt="drop1" class="c-drop1">
+      <img src="assets/img/drop5.png" alt="drop2" class="c-drop2">
+      <img src="assets/img/drop4.png" alt="drop3" class="c-drop3">
+      <img src="assets/img/drop3.png" alt="drop4" class="c-drop4">
+      <img src="assets/img/drop2.png" alt="drop5" class="c-drop5">
+      <img src="assets/img/drop1.png" alt="drop6" class="c-drop6">
+
+    </div>
+    <!-- NAV PC -->
+    <div class="c-nav ">
+      <!-- ICON CHECK SP -->
+      <div class="c-nav__sp">
+        <label for="checkbox-input" class="c-nav__icon sp-only">
+          <img src="assets/img/iconmenu.png" alt="Menu Icon">
+        </label>
+        <input type="checkbox" hidden class="c-input" id="checkbox-input">
+        <label for="checkbox-input" class="l-overlay"></label>
+        <nav class="c-navheader">
+          <img class="c-nav__imgtop" src="assets/img/leafmenu-top.png" alt="Leaf">
+          <img class="c-nav__imgright" src="assets/img/leafmenu-right.png" alt="Leaf">
+          <label class="c-iconinner" for="checkbox-input">
+            <img src="assets/img/iconmenu-inner.png" alt="Menu-cion">
+          </label>
+          <!-- MAV LIST SP -->
+          <ul>
+            <li class="c-navlink"><a class="c-navlink__text" href="#">トップ</a></li>
+            <li class="c-navlink"><a class="c-navlink__text" href="#product-feature">毎日にハッカ油</a></li>
+            <li class="c-navlink"><a class="c-navlink__text" href="#point">製品情報</a></li>
+            <li class="c-navlink"><a class="c-navlink__text" href="#qa">Q&A</a></li>
+            <li class="c-navlink"><a class="c-navlink__text" href="#column">ハッカ油コラム</a></li>
+            <li class="c-navlink"><a class="c-navlink__text" href="#footer">ハッカ油ムービー</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- NAV LIST PC -->
+      <ul class="c-navlist">
+        <li class="is-active" ><a href="#home-page">トップ</a></li>
+        <li ><a href="#product-feature">毎日にハッカ油</a></li>
+        <li ><a href="#point">製品情報</a></li>
+        <li ><a href="#qa">Q&A</a></li>
+        <li ><a href="#column">ハッカ油コラム</a></li>
+        <li ><a href="#footer">ハッカ油ムービー</a></li>
+      </ul>
+    </div>
+    
+    <div class="c-top" id="home-page">
+      <section class="l-container">
+        <!-- MAINVISUAL -->
+        <div class="c-mainvisual">
+          <div class="c-mainvisual__img">
+            <img class="pc-only" src="assets/img/mainvisual.png" alt="Banner Header ">
+            <img class="c-imgsp sp-only " src="assets/img/bg-main--sp.png" alt="Banner Header">
+          </div>
+          <div class="c-mainvisual__inner">
+            <div class="c-product">
+              <h1 class="c-product__img">
+                <img class="pc-only" src="assets/img/text-mainvisual.png" alt="Title Banner">
+                <img class="sp-only c-mainvisual__heading" src="assets/img/text-mainvisual--sp.png" alt="Title Banner">
+              </h1>
+              <span class="c-line"></span>
+              <div class="c-product__text">
+                <p class="c-product__title">MENTHA OIL</p>
+                <p class="c-product__use">ハッカ油は、毎日の暮らしを豊かにする</p>
+                <h2 class="c-product__name">魔法のしずく</h2>
+                <a href="#" class="c-btn">
+                  <span>ハッカ？ミント？</span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT FEATURE -->
+        <div class="c-product__feature" id="product-feature">
+            <p class="c-product__headingone">使い方いろいろ</p>
+            <h2 class="c-product__headingtwo">毎日にハッカ油</h2>
+          <div class="c-products">
+            <div class="c-products__itemonce">
+
+              <div class="c-itemonce">
+                <a href="#">
+                  <img class="c-products__imgdailyonce pc-only" src="assets/img/dailyuse.png" alt="ハッカ水">
+                  <img class="c-products__imgdailyonce sp-only" src="assets/img/dailyuse--sp.png" alt="ハッカ水">
+                  <img class="c-products__imgonce" src="assets/img/both.png" alt="ハッカ水">
+                  <p class="c-products__nameonce u-textcolor ">ハッカ水</p>
+                </a>
+              </div>
+
+              <div class="c-itemtwo">
+                <a href="#">
+                  <img class="c-products__imgtwo" src="assets/img/aerosol.png" alt="ハッカの虫除けスプレー">
+                  <p class="c-products__nametwo u-textcolor">ハッカの虫除けスプレー</p>
+                </a>
+              </div>
+              <div class="c-itemthree">
+                <a href="#">
+
+                  <img class="c-products__imgthree pc-only" src="assets/img/iron.png" alt="ハッカのリネンウォーター">
+                  <img class="c-products__imgthree sp-only" src="assets/img/iron--sp.png" alt="ハッカのリネンウォーター">
+                  <p class="c-products__namethree u-textcolor">ハッカのリネンウォーター</p>
+                </a>
+              </div>
+              <div class="c-itemfour">
+                <a href="#">
+                  <img class="c-products__imgdailytwo pc-only" src="assets/img/dailyuse.png" alt="ハッカのエアフレッシュナー">
+                  <img class="c-products__imgdailytwo sp-only" src="assets/img/dailyuse--sp.png" alt="ハッカのエアフレッシュナー">
+                  <img class="c-products__imgfour" src="assets/img/sprayWater.png" alt="ハッカのエアフレッシュナー">
+                  <p class="c-products__namefour u-textcolor">ハッカのエアフレッシュナー</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="c-products__itemtwo">
+              <div class="c-itemfive">
+                <a href="#">
+                  <img class="c-products__imgfive" src="assets/img/light.png" alt="ハッカの清涼スプレー">
+                  <p class="c-products__namefive u-textcolor">ハッカの清涼スプレー</p>
+                </a>
+              </div>
+              <div class="c-itemsix">
+                <a href="#">
+
+                  <img class="pc-only c-products__recommned" src="assets/img/recommned.png" alt="ハッカマスク">
+                  <img class="sp-only c-products__recommned" src="assets/img/recommend--sp.png" alt="ハッカマスク">
+                  <img class="c-products__imgsix" src="assets/img/mask.png" alt="ハッカマスク">
+                  <p class="c-products__namesix u-textcolor">ハッカマスク</p>
+                </a>
+              </div>
+              <div class="c-itemseven">
+                <a href="#">
+                  <p class="c-products__nameseven u-textcolor">ハッカで安息</p>
+                  <img class="c-products__imgseven " src="assets/img/pillow.png" alt="ハッカで安息">
+                </a>
+
+              </div>
+              <div class="c-itemeight">
+                <a href="#">
+                  <p class="c-products__nameeight u-textcolor">ハッカの入浴剤</p>
+                  <img class="c-products__imgeight " src="assets/img/bathtub.png" alt="ハッカの入浴剤">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POINT -->
+      <section class="c-point" id="point">
+        <div class="l-wrapper">
+
+          <!-- POINT 1 -->
+          <div class="c-point__once" id="point-once">
+            <div class="c-point__title">
+              <div class="c-pointleft">
+                <img src="assets/img/point1-text.png" alt="気持ちリフレッシュ">
+                <span class="c-linepoint"></span>
+                <p class="c-pointtext">Point</p>
+              </div>
+
+              <div class="c-pointright">
+                <h2 class="c-title">気持ちリフレッシュ</h2>
+                <p class="c-content pc-only">鼻や口から入った香りの信号は、視床下部などに直接作用し <br>
+                  気分をリフレッシュさせてくれます。</p>
+              </div>
+            </div>
+            <div>
+              <p class="c-content sp-only">鼻や口から入った香りの信号は、視床下部などに直接作用し気分をリフレッシュさせてくれます。</p>
+            </div>
+            <div class="c-point__imglist">
+              <div class="c-point__img c-point__imgone">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">部屋干しも安心</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍 &nbsp;優しい自然な香りですっきりさわやか。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+                <button>
+                  <img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ">
+                </button>
+              </div>
+
+
+              <div class="c-point__img c-point__imgtwo">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">気分転換に</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">集中力が低下してきたときはハッカ油でリフレッシュ。気分もすっきり眠気覚ましに最適です。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
+              </div>
+
+
+              <div class="c-point__img c-point__imgthree">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">外出のお供に</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">遠足やピクニックで思いっきり遊んでも、ハッカ油のおしぼりをサッと取り出していつでも清潔。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
+              </div>
+            </div>
+
+          </div>
+          <!-- POINT 2 -->
+          <div class="c-point__once">
+            <div class="c-point__title">
+              <div class="c-pointleft">
+                <img src="assets/img/point2-text.png" alt="気持ちリフレッシュ">
+                <span class="c-linepoint"></span>
+                <p class="c-pointtext">Point</p>
+              </div>
+
+              <div class="c-pointright">
+                <h2 class="c-title">気持ちリフレッシュ</h2>
+                <p class="c-content pc-only">メントールの刺激ですっきりクールダウン。<br>
+                  ミントの香りで気分も爽快！</p>
+              </div>
+            </div>
+            <div>
+              <p class="c-content sp-only">メントールの刺激ですっきりクールダウン。<br>
+                ミントの香りで気分も爽快！</p>
+            </div>
+            <div class="c-point__imglist">
+              <div class="c-point__img c-point__imgfour">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">スッと冷却</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">暑くて体に熱がこもりがちな暑い季節はハッカ油でクールダウン。心地の良い涼しさを味わえます。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
+              </div>
+
+              <div class="c-point__img  c-point__imgfive">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">花粉の季節に</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">ハッカマスクでブルーな気分も吹き飛ばしてくれます。</p>
+                  <p class="c-inner__nav">ハッカ油コラムへ</p>
+                </div>
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
+              </div>
+
+              <div class="c-point__img c-point__imgsix">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">足湯に</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">ひんやり爽快。ハッカ油で寝苦しい夜もすっきり。さわやかな香りで気分もリフレッシュ。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
+              </div>
+            </div>
+
+          </div>
+          <!-- POINT 3 -->
+          <div class="c-point__once">
+            <div class="c-point__title">
+              <div class="c-pointleft">
+                <img src="assets/img/point3-text.png" alt="ハウスキーピング">
+                <span class="c-linepoint"></span>
+                <p class="c-pointtext">Point</p>
+              </div>
+
+              <div class="c-pointright">
+                <h2 class="c-title">ハウスキーピング</h2>
+                <p class="c-content pc-only">ハッカ油に含まれるメントールは、お部屋のスッキリを演出。<br>
+                  お家の害虫対策にもおすすめです。</p>
+              </div>
+            </div>
+            <div>
+              <p class="c-content sp-only">ハッカ油に含まれるメントールはお部屋のスッキリを演出。
+                お家の害虫対策にもおすすめです。</p>
+            </div>
+            <div class="c-point__imglist">
+              <div class="c-point__img c-point__imgseven">
+                <div class="c-img__inner  c-pointtext__nine">
+                  <p class="c-inner__title">嫌な害虫を撃退</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="ハウスキーピングュ"></button>
+              </div>
+
+              <div class="c-point__img c-point__imgeight">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">窓ガラスに</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">自然素材のハッカ油で手肌にも優しくハウスキーピング。手軽に作れるガラスクリーナーでピカピカに。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="ハウスキーピング"></button>
+              </div>
+              <div class="c-point__img c-point__imgnine">
+                <div class="c-img__inner">
+                  <p class="c-inner__title">シューピローに</p>
+                  <span class="c-inner__linepoint"></span>
+                  <p class="c-inner__content">お部屋の悪臭にはハッカ油が迎え撃ち！嫌な匂いがこもりがちな靴にハッカ油のシューピローを。</p>
+                  <a href="#">
+                    <p class="c-inner__nav">ハッカ油コラムへ</p>
+                  </a>
+                </div>
+
+                <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="ハウスキーピング"></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="c-pointfooter">
+          <p class="c-point__store">お買い求めは全国のドラッグストア<br class="sp-only">、またはこちらから</p>
+          <div class="c-storelist">
+            <a href="#" target="_blank" class="c-storelist__link">
+              <img class="c-storelist__img" src="assets/img/store1.jpg" alt="Home Page">
+            </a>
+            <a href="#" target="_blank" class="c-storelist__link">
+              <img class="c-storelist__img" src="assets/img/store2.jpg" alt="Home Page">
+            </a>
+            <a href="#" target="_blank" class="c-storelist__link">
+              <img class="c-storelist__img" src="assets/img/store3.jpg" alt="Home Page">
+            </a>
+            <a href="#" target="_blank" class="c-storelist__link">
+              <img class="c-storelist__img" src="assets/img/store4.jpg" alt="Home Page">
+            </a>
+          </div>
+
+          <p class="c-text">Amazon、Amazon.co.jp、及びAmazon.co.<span class=" c-textsp sp-only">-<br
+                class="sp-only"></span>jpロゴはAmazon.com, Inc.又はその関連会社<br class="sp-content sp-only">の商標です。</p>
+        </div>
+      </section>
+      <!-- Q&A -->
+      <section class="c-qa" id="qa">
+        <div class="l-wrapper">
+          <!-- Q&A -->
+          <h2 class="c-qatitle">Q&A</h2>
+          <div class="c-listitem">
+            <div class="c-item">
+              <div class="c-item__title">
+                <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
+                <p class="c-title">虫除け対策に直接体や環境に噴きかけても良いですか？</p>
+              </div>
+              <p class="c-item__content ">刺激が強過ぎる可能性がありますので、薄めて使用してください。また素材によっては変質(変色<br
+                  class="sp-only">)するおそれがありますので注意してください。</p>
+            </div>
+            <div class="c-item">
+              <div class="c-item__title">
+                <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
+                <p class="c-title">体に使用する際の注意点は？</p>
+              </div>
+              <p class="c-item__content c-item__contenttwo">刺激作用があるため、目や目の周囲、粘膜等に付着しないように注意してください。</p>
+            </div>
+            <div class="c-item pc-only">
+              <div class="c-item__title">
+                <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
+                <p class="c-title">ハッカ油アイテムを作る際に使用する量は紹介されている量を守らないといけませんか？</p>
+              </div>
+              <p class="c-item__content">紹介している量はあくまでも目安になります。ただし、これ以上の量を加えると刺激が強過ぎる可能性があるので注意してください。。</p>
+            </div>
+            <div class="c-item pc-only">
+              <div class="c-item__title">
+                <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
+                <p class="c-title">使用期限はどのくらいですか？</p>
+              </div>
+              <p class="c-item__content">パッケージ裏面に賞味期限を記載しています。遮光して、涼しい所に保管してください。</p>
+            </div>
+            <div class="c-item pc-only">
+              <div class="c-item__title">
+                <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
+                <p class="c-title">ハッカ油は何からできたものですか？</p>
+              </div>
+              <p class="c-item__content">ハッカ油とはハッカソウというミントを乾燥させて抽出した植物油のことです。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Column -->
+      <section class="c-column" id="column">
+        <div class="l-wrapper">
+          <div class="c-column__banner">
+            <a href="#">
+              <img class="pc-only c-column__leftimg" src="assets/img/banner-columm.png" alt="Column">
+              <img class="sp-only c-bannerimg" src="assets/img/banner-columm--sp.png" alt="Column">
+              <div class="c-textbanner sp-only">
+                <p>日々の暮らしにお役立ち </p>
+                <p>「ハッカ油コラム」へ</p>
+              </div>
+            </a>
+
+          </div>
+          <div class="c-columnlist">
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only " src="assets/img/column11.png" alt="風邪をひきやすい冬も安心
+                風邪やインフルエンザシーズンにもハッカ油
+                ">
+                    <img class="sp-only " src="assets/img/column11-sp.png" alt="風邪をひきやすい冬も安心
+                風邪やインフルエンザシーズンにもハッカ油
+                ">
+                  </div>
+                  <div class="c-column__right">
+                    <p>風邪をひきやすい冬も安心</p>
+                    <h3>風邪やインフルエンザシーズンにもハッカ油</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des ">
+                  風邪をひきやすくなる冬、朝起きたら喉がガラガラなんていうことはありませんか？<span
+                    class="u-mg">実はこれ、夜寝ている間にウイ</span>ルスが体内で増殖してしまった証拠かもしれません。寒さと乾燥の厳しい冬の風邪は、夜寝ている間に悪化しやすいといわれています。そんな季節に役立つハッカ油の使い方をご紹介します。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油" class="c-arrow  pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+
+              <div class="c-btnarrow">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+
+            <div class="c-columnitem">
+
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column10.png" alt="万能だからこそ知っておこう
+                    ハッカ油を安全に使うためのルール">
+                    <img class="sp-only" src="assets/img/column10--sp.png" alt="万能だからこそ知っておこう
+                    ハッカ油を安全に使うためのルール">
+                  </div>
+                  <div class="c-column__right">
+                    <p>万能だからこそ知っておこう</p>
+                    <h3>ハッカ油を安全に使うためのルール</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  防虫、消臭、除菌、リラックスなど、さまざまな効果が期待できるハッカ油は使えば使うほど万能で、生活のあらゆる場面で欠かせなくなってきます。しかし、だからこそ知っておきたいのがハッカ油を安全に使うためのルールです。ハッカ油ならではの性質に着目して、保管から具体的な使う上での注意点についてご紹介します。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="万能だからこそ知っておこう
+                ハッカ油を安全に使うためのルール" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column9.png" alt="涼しいオアシスタイム
+                    ハッカ油の冷却パワーを上手に使おう">
+                    <img class="sp-only" src="assets/img/column9--sp.png" alt="涼しいオアシスタイム
+                    ハッカ油の冷却パワーを上手に使おう">
+                  </div>
+                  <div class="c-column__right">
+                    <p>涼しいオアシスタイム</p>
+                    <h3>ハッカ油の冷却パワーを上手に使おう</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  湯上りやスポーツの後など、熱のこもった体を手早くクールダウンしたい時もハッカ油の出番です。蒸発する際に周囲の熱を奪う性質があるので、さわやかな香りを放ちながらすっきりと冷却してくれます。いつでも手軽に使えるハッカ油の清涼スプレーの作り方を紹介しますので、まずは一本作ってみて、その効果をお試しあれ。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="涼しいオアシスタイム
+                ハッカ油の冷却パワーを上手に使おう" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column8.png" alt="気分転換の強い味方
+                    ハッカ油でリラックス&リフレッシュ">
+                    <img class="sp-only" src="assets/img/column8--sp.png" alt="気分転換の強い味方
+                    ハッカ油でリラックス&リフレッシュ">
+                  </div>
+                  <div class="c-column__right">
+                    <p>気分転換の強い味方</p>
+                    <h3>ハッカ油でリラックス&リフレッシュ</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  疲れているのに寝付けない、試験勉強がはかどらない、楽しみな旅行も乗り物酔いで台なし……。そんな時こそ、ハッカ油でリラックス＆リフレッシュ。ハッカ油のさわやかな香りは濃度によって効果が異なり、しっかり使えば気分転換に、量を控えれば気持ちを落ち着かせる作用があります。状況に応じてうまく使い分けましょう。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="気分転換の強い味方
+                ハッカ油でリラックス&リフレッシュ" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column7.png" alt="嫌な匂いはサヨウナラ、ブーツや靴などに
+                    ハッカ油の消臭マジック！">
+                    <img class="sp-only" src="assets/img/column7--sp.png" alt="嫌な匂いはサヨウナラ、ブーツや靴などに
+                    ハッカ油の消臭マジック！">
+                  </div>
+                  <div class="c-column__right">
+                    <p>嫌な匂いはサヨウナラ、ブーツや靴などに</p>
+                    <h3>ハッカ油の消臭マジック<span class="u-mgleft">！</span></h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  ニオイ対策にも使用できるハッカ油は、お口の不快感対策の他、排水溝や下駄箱などで消臭剤としても活用できます。消臭スプレーや芳香剤の人工的な香りよりも、気持ち良く使える人が多いはず。体に優しいハッカ油の即席マウスケアや防臭シューピローを作って、ぜひ試してみてください。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="嫌な匂いはサヨウナラ、ブーツや靴などに
+                ハッカ油の消臭マジック！" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column6.png" alt="香りと抗菌のダブルパワー
+                    衣類がハッカ油でよみがえる！？">
+                    <img class="sp-only" src="assets/img/column6-sp.png" alt="香りと抗菌のダブルパワー
+                    衣類がハッカ油でよみがえる！？">
+                  </div>
+                  <div class="c-column__right">
+                    <p>香りと抗菌のダブルパワー</p>
+                    <h3>衣類がハッカ油でよみがえる <span class="u-mgcolsix">！ ？ </span> </h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  ハッカ油の香りと抗菌効果は、衣類の手入れや保管でも力を発揮。洗濯のすすぎ時に数滴混ぜれば部屋干しする際に雑菌の繁殖を抑えてくれるし、匂い袋にしてタンスに入れれば防虫効果も期待できます。身に付ける自分自身はもちろん<span
+                    class=""> 、お会いする相手のためにも、ハッカ油を使って衣類を気持ちの良い状態に保ちましょう</span>
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="香りと抗菌のダブルパワー
+                衣類がハッカ油でよみがえる！？" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column5.png" alt="いつでもどこでもサッと使える
+                    ハッカ油スプレーで携帯ハッカ油を始めよう">
+                    <img class="sp-only" src="assets/img/column5-sp.png" alt="いつでもどこでもサッと使える
+                    ハッカ油スプレーで携帯ハッカ油を始めよう">
+                  </div>
+                  <div class="c-column__right">
+                    <p>いつでもどこでもサッと使える</p>
+                    <h3>ハッカ油スプレーで携帯ハッカ油を始めよう</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  除菌・消臭効果が期待できるハッカ油は、手作りスプレーにして携帯すれば、いろいろなシーンで大活躍。車にこもった嫌な臭い、食事で衣服に付いたきつい匂いも、シュッと一噴きで簡単にリフレッシュ。自然素材だから、小さな子どもを抱っこするママも気持ちよく使えます。万能なハッカ油をしっかり活用してください。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="いつでもどこでもサッと使える
+                ハッカ油スプレーで携帯ハッカ油を始めよう" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column4.png" alt="使わないなんてもったいない
+                    ハッカ油は万能ハウスクリーナー">
+                    <img class="sp-only" src="assets/img/column4--sp.png" alt="使わないなんてもったいない
+                    ハッカ油は万能ハウスクリーナー">
+                  </div>
+                  <div class="c-column__right">
+                    <p>使わないなんてもったいない</p>
+                    <h3>ハッカ油は万能ハウスクリーナー</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  自然素材を使って掃除したい人にもハッカ油はおすすめ。除菌・防カビ・消臭効果が期待でき、掃除や食器の手入れにも使えます。炭酸水や重曹に数滴混ぜるだけの簡単クリーナーで、家中ピカピカに磨き上げましょう！
+                  合成洗剤のように手荒れの心配もなく、何より、さわやかな香りが心地良いため面倒な掃除も頑張れそうです。</div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="使わないなんてもったいない
+                ハッカ油は万能ハウスクリーナー" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column3.png" alt="おうちでサロン気分
+                    ハッカ油で楽しいバスタイム">
+                    <img class="sp-only" src="assets/img/column3--sp.png" alt="おうちでサロン気分
+                    ハッカ油で楽しいバスタイム">
+                  </div>
+                  <div class="c-column__right">
+                    <p>おうちでサロン気分</p>
+                    <h3>ハッカ油で楽しいバスタイム</h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  バスタイムを満喫できるさまざまな入浴剤やバスソルトが市販されていますが、実はハッカ油を入浴剤として使ってもOK。湯上りがさっぱりとして、気分爽快！またシャンプーやボディーソープに混ぜて使えば、汗でべたべたする頭皮や肌をすっきり引き締めてくれます。ジメジメする梅雨時期や、汗をかく夏場の入浴には特におすすめです。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="おうちでサロン気分
+                ハッカ油で楽しいバスタイム" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column2.png" alt="マスクにシュッシュと一噴き
+                    ハッカ油で上手に生活管理！">
+                    <img class="sp-only" src="assets/img/column2--sp.png" alt="マスクにシュッシュと一噴き
+                    ハッカ油で上手に生活管理！">
+                  </div>
+                  <div class="c-column__right">
+                    <p>マスクにシュッシュと一噴き</p>
+                    <h3>ハッカ油で上手に生活管理<span class="u-mgleft">！</span></h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  ハッカ油はマスクにシュッと一噴きすることで生活管理に役立てることができます。体調がすぐれず沈みがちな気分も
+                  、清涼感のある香りがリフレッシュしてくれます。ハッカ油を上手に使って、健やかな暮らしを叶えましょう。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="マスクにシュッシュと一噴き
+                ハッカ油で上手に生活管理！" class="c-arrow pc-only u-transpoint">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+            <div class="c-columnitem">
+              <a href="#">
+                <div class="c-column__heading">
+                  <div class="c-column__left">
+                    <img class="pc-only" src="assets/img/column1.png" alt="害虫も怖くない
+                    さわやかハッカ油で虫除け対策！">
+                    <img class="sp-only" src="assets/img/column1--sp.png" alt="害虫も怖くない
+                    さわやかハッカ油で虫除け対策！">
+                  </div>
+                  <div class="c-column__right">
+                    <p>害虫も怖くない</p>
+                    <h3>さわやかハッカ油で虫除け対策<span class="u-mgleft">！</span></h3>
+                  </div>
+                </div>
+              </a>
+              <div class="c-deslink">
+                <div class="c-column__des">
+                  ハッカ油の清涼感ある香りは人間には心地良いですが、多くの害虫は大の苦手。この性質を利用して、安心安全な天然の虫除け剤を手作りしてみましょう。身体に直接湿布するのはもちろん、網戸にシュッと一噴きしたり、キッチンの水回りなどに液剤を染み込ませたコットンを置いたりと、さまざまな用途に使えます。
+                </div>
+                <img src="assets/icon/icon-arrow-right.svg" alt="害虫も怖くない
+                さわやかハッカ油で虫除け対策！" class="c-arrow pc-only">
+                <a href="#" class="sp-only c-textlink">詳しく見る</a>
+              </div>
+              <div class="c-btnarrow sp-only">
+                <img class="c-iconarrow" src="assets/icon/arrow-top.svg" alt="風邪をひきやすい冬も安心
+                  風邪やインフルエンザシーズンにもハッカ油">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="c-footer" id="footer">
+        <div class="l-wrapper">
+          <a href="#">
+            <img class="pc-only" src="assets/img/BannerFooter.png" alt="Home Page">
+            <img class="sp-only c-bannersp" src="assets/img/BannerFooter--sp.png" alt="Home Page">
+          </a>
+          <div class="c-footer__infor ">
+            <div class="c-footer__left pc-only">
+              <p class="c-footer__text">
+                商品に関するお問い合わせは <br>
+                健栄製薬株式会社<br>
+                TEL | 06-6231-5626&nbsp;&nbsp;&nbsp;受付時間 | 8:45〜17:30(土日祝日を除く)
+              </p>
+            </div>
+            <div class="c-footer__left sp-only">
+              <p class="c-footer__text">
+                商品に関するお問い合わせは <br>
+                健栄製薬株式会社<br>
+                TEL | |&nbsp;<a href="tel:0662315626">06-6231-5626</a> &nbsp;&nbsp;受付時間 | | 8:45〜17:30(土日祝日を除く)
+              </p>
+            </div>
+            <div class="c-footer__right">
+              <a href="#home-page"> <img src="assets/img/logo_kenei.png" alt="Home Page"></a>
+              <p class="c-footer__textlogo">©KENEI Pharmaceutical</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </main>
+  <!-- @@content -->

@@ -1,0 +1,74 @@
+/*------------------------------------------------------------
+text
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-point {
+    .c-text {
+        font-size: 1.2rem;
+        color: rgb(51, 51, 51);
+        line-height: 2.1;
+        padding-top: 42px;
+        padding-bottom: 106px;
+        letter-spacing: 1.4px;
+        display: flex;
+        justify-content: center;
+        transform: translate(0, 2px);
+
+        @include sp {
+            font-size: 1.3rem;
+            margin-top: 18px;
+            letter-spacing: 1.3px;
+            line-height: 1.7;
+            text-align: center;
+            padding: 0;
+        }
+    }
+  
+
+}
+
+.c-pointtext {
+    &__nine {
+        padding-top: 35px !important;
+    }
+}
+
+.c-textbanner {
+
+    position: absolute;
+    top: 48px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    p:nth-child(1) {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    p:nth-child(2) {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+.c-columnitem {
+    .c-textlink {
+        @include sp {
+            text-decoration: underline;
+            font-size: 1.6rem;
+            display: block;
+            margin-left: auto;
+            max-width: 68px;
+            font-size: 1.3rem;
+            color: rgb(23, 107, 106);
+            text-align: right;
+            margin-top: 14px;
+        }
+    }
+}

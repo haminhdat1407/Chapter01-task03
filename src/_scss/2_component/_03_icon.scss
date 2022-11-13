@@ -1,0 +1,32 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-arrow {
+    position: absolute;
+    right: 0;
+    top: 42%;
+}
+
+.c-iconarrow {
+    display: none;
+    @include sp {
+        width: 35px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        transform: rotate(0deg);
+    }
+
+}
+
+.c-iconinner {
+    width: 45px;
+    position: absolute;
+    top: -61px;
+    left: 15px;
+    z-index: 1111111;
+}

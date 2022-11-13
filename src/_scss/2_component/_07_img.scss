@@ -1,0 +1,296 @@
+/*------------------------------------------------------------
+img
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+
+
+.c-drop {
+    &1 {
+        position: absolute;
+        left: 28.53%;
+        top: 18%;
+        z-index: 1;
+        animation: bubble1 2s linear infinite;
+    }
+
+    &2 {
+        position: absolute;
+        top: 14.2%;
+        left: 57.22%;
+        z-index: 1;
+        animation: bubble 2s linear infinite;
+    }
+
+    &3 {
+        position: absolute;
+        top: 21.6%;
+        right: 13.5%;
+        z-index: 1;
+        animation: bubble1 2s linear infinite;
+    }
+
+    &4 {
+        position: absolute;
+        right: 22.32%;
+        bottom: -5.4%;
+        z-index: 1;
+        animation: bubble 2s linear infinite;
+    }
+
+    &5 {
+        position: absolute;
+        left: 29.25%;
+        bottom: -2.7%;
+        z-index: 1;
+        animation: bubble1 2s linear infinite;
+    }
+
+    &6 {
+        position: absolute;
+        left: 16.3%;
+        bottom: 8.8%;
+        z-index: 1;
+        animation: bubble 2s linear infinite;
+    }
+}
+
+.c-nav {
+    &__imgtop {
+        width: 160px;
+        position: absolute;
+        top: -16%;
+        left: 0;
+    }
+
+    &__imgright {
+        width: 180px;
+        position: absolute;
+        top: 74%;
+        right: 0;
+    }
+}
+
+.c-products {
+    &__imgdailyonce {
+        top: -53px;
+        left: 2px;
+        position: absolute;
+
+        @include sp {
+            top: -23px;
+            width: 127px;
+            left: 7.9%;
+
+        }
+    }
+
+    &__imgdailytwo {
+        top: -53px;
+        left: -54px;
+        position: absolute;
+
+        @include sp {
+            top: 3px;
+            width: 128px;
+            left: 51.8%;
+
+        }
+
+    }
+
+    &__recommned {
+        margin-top: 0;
+        margin-bottom: -10px;
+
+        @include sp {
+            top: -23px;
+            width: 104px;
+            left: 42.7%;
+            position: absolute;
+
+        }
+    }
+
+    &__img {
+        &once {
+            position: absolute;
+            left: 52px;
+
+            @include sp {
+                left: 23.2%;
+                width: 30px;
+                top: 2px;
+
+            }
+        }
+
+        &two {
+            position: absolute;
+            top: 41px;
+            left: 21px;
+
+            @include sp {
+                top: 3px;
+                left: 81.2%;
+                width: 35px;
+
+            }
+        }
+
+        &three {
+            position: absolute;
+            top: 41px;
+            left: -4px;
+
+            @include sp {
+                top: 8px;
+                left: 7.3%;
+                width: 48px;
+            }
+        }
+
+        &four {
+            position: absolute;
+            top: 0;
+            left: 0.8%;
+
+            @include sp {
+                @include sp {
+                    width: 30px;
+                    left: 66.6%;
+                    top: 29px;
+                }
+            }
+        }
+
+        &five {
+            position: absolute;
+            top: 26px;
+            left: 66px;
+
+            @include sp {
+                left: 7.7%;
+                width: 38px;
+                top: 2px;
+            }
+        }
+
+        &six {
+            position: absolute;
+            top: 57px;
+            left: 2px;
+
+            @include sp {
+                left: 52.5%;
+                top: 28px;
+                width: 110px;
+            }
+        }
+
+        &seven {
+            position: absolute;
+            right: 0;
+
+            @include sp {
+                left: 9.7%;
+                top: -8px;
+                width: 64px;
+            }
+        }
+
+        &eight {
+            position: absolute;
+            right: 0;
+
+            @include sp {
+                left: 66.8%;
+                top: -39.3px;
+                width: 80px;
+            }
+        }
+    }
+
+}
+
+.c-pointleft {
+    img {
+        @include sp {
+            width: 39px;
+        }
+    }
+}
+
+.c-mainvisual {
+    .c-imgsp {
+        @include sp {
+            margin: 0 auto;
+            transform: translateY(-15px);
+        }
+    }
+}
+
+.c-bannerimg {
+    position: relative;
+}
+
+.c-bannersp {
+    display: none;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @include sp {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+.c-point {
+    &__imgone {
+        background-image: url("../../assets/img/point1-1.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgtwo {
+        background-image: url("../../assets/img/point1-2.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgthree {
+        background-image: url("../../assets/img/point1-3.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgfour {
+        background-image: url("../../assets/img/point2-1.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgfive {
+        background-image: url("../../assets/img/point2-2.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgsix {
+        background-image: url("../../assets/img/point2-3.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgseven {
+        background-image: url("../../assets/img/point3-1.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgeight {
+        background-image: url("../../assets/img/point3-2.png");
+        background-repeat: no-repeat;
+    }
+
+    &__imgnine {
+        background-image: url("../../assets/img/point3-3.png");
+        background-repeat: no-repeat;
+    }
+
+}
