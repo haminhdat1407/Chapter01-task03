@@ -2,9 +2,12 @@
 $(document).ready(function () {
 
   // Active Nav
- $('.c-navlist').click(function () {
-  
- })
+  $('.c-navlist li a').click(function(e) {
+    $('.c-navlist li.is-active').removeClass('is-active');
+
+    var $parent = $(this).parent();
+    $parent.addClass('is-active');
+});
 
 
   $('.c-point__btn').click(function () {

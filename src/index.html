@@ -53,12 +53,12 @@
 
       <!-- NAV LIST PC -->
       <ul class="c-navlist">
-        <li class="is-active" ><a href="#home-page">トップ</a></li>
-        <li ><a href="#product-feature">毎日にハッカ油</a></li>
-        <li ><a href="#point">製品情報</a></li>
-        <li ><a href="#qa">Q&A</a></li>
-        <li ><a href="#column">ハッカ油コラム</a></li>
-        <li ><a href="#footer">ハッカ油ムービー</a></li>
+        <li class="c-navlink is-active" ><a href="#home-page">トップ</a></li>
+        <li class="c-navlink" ><a href="#product-feature">毎日にハッカ油</a></li>
+        <li class="c-navlink" ><a href="#point">製品情報</a></li>
+        <li class="c-navlink" ><a href="#qa">Q&A</a></li>
+        <li class="c-navlink" ><a href="#column">ハッカ油コラム</a></li>
+        <li class="c-navlink" ><a href="#footer">ハッカ油ムービー</a></li>
       </ul>
     </div>
     
@@ -73,6 +73,7 @@
           <div class="c-mainvisual__inner">
             <div class="c-product">
               <h1 class="c-product__img">
+                
                 <img class="pc-only" src="assets/img/text-mainvisual.png" alt="Title Banner">
                 <img class="sp-only c-mainvisual__heading" src="assets/img/text-mainvisual--sp.png" alt="Title Banner">
               </h1>
@@ -435,14 +436,26 @@
             <div class="c-columnitem">
               <a href="#">
                 <div class="c-column__heading">
-                  <div class="c-column__left">
+                  <!-- <div class="c-column__left">
                     <img class="pc-only " src="assets/img/column11.png" alt="風邪をひきやすい冬も安心
                 風邪やインフルエンザシーズンにもハッカ油
                 ">
                     <img class="sp-only " src="assets/img/column11-sp.png" alt="風邪をひきやすい冬も安心
                 風邪やインフルエンザシーズンにもハッカ油
                 ">
-                  </div>
+                  </div> -->
+                   <picture class="c-column__left">
+                    <source media="(min-width: 1023px)"  srcset="assets/img/column11.png" alt="風邪をひきやすい冬も安心
+                風邪やインフルエンザシーズンにもハッカ油
+                ">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column11-sp.png" alt="風邪をひきやすい冬も安心
+                風邪やインフルエンザシーズンにもハッカ油
+                ">
+                <img  srcset="assets/img/column11.png" alt="風邪をひきやすい冬も安心
+                風邪やインフルエンザシーズンにもハッカ油
+                ">
+                  </picture>
+
                   <div class="c-column__right">
                     <p>風邪をひきやすい冬も安心</p>
                     <h3>風邪やインフルエンザシーズンにもハッカ油</h3>
