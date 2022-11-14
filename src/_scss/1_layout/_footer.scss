@@ -6,8 +6,8 @@ footer
     margin-top: 16px;
     padding-bottom: 59px;
     @include sp {
-        margin-top: -34px;
-        padding-bottom: 0;
+        margin-top: -37px;
+        padding-bottom: 3px;
     }
 
     &__infor {
@@ -50,6 +50,7 @@ footer
             display: block;
             @include sp {
                 margin: auto;
+                transform: translateY(-2px);
                 width: 100px;
             }
         }

@@ -227,6 +227,7 @@ img
         @include sp {
             margin: 0 auto;
             transform: translateY(-15px);
+            margin-top: 160px;
         }
     }
 }
@@ -236,15 +237,20 @@ img
 }
 
 .c-bannersp {
-    display: none;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-
+    // display: none;
     @include sp {
+        max-width: 250px;
+        margin: 0 auto;
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 53px;
     }
+
+    // @include sp {
+    //     display: block;
+    //     margin-bottom: 0;
+    //     transform: translate(1px, -4px);
+
+    // }
 }
 
 .c-point {
@@ -281,6 +287,19 @@ img
     &__imgseven {
         background-image: url("../../assets/img/point3-1.png");
         background-repeat: no-repeat;
+
+        .c-inner {
+            &__title {
+                @include sp {
+                    margin-top: 23px;
+                }
+            }
+        }
+
+        @include sp {
+            transform: translateY(2px);
+
+        }
     }
 
     &__imgeight {

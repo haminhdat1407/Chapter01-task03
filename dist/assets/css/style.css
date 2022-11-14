@@ -213,8 +213,8 @@ footer
 }
 @media only screen and (max-width: 1023px) {
   .c-footer {
-    margin-top: -34px;
-    padding-bottom: 0;
+    margin-top: -37px;
+    padding-bottom: 3px;
   }
 }
 .c-footer__infor {
@@ -264,6 +264,8 @@ footer
 @media only screen and (max-width: 1023px) {
   .c-footer__right img {
     margin: auto;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
     width: 100px;
   }
 }
@@ -320,7 +322,7 @@ body {
 .c-pointfooter {
   margin: 0 auto;
   position: relative;
-  max-width: 1100px;
+  max-width: 1130px;
 }
 @media only screen and (max-width: 1023px) {
   .c-pointfooter {
@@ -328,6 +330,7 @@ body {
     padding-bottom: 54px;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
+    padding: 0 15px 62px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -367,9 +370,9 @@ button {
   margin: 0 auto;
   margin-top: 21px;
   margin-left: 9px;
-  border-radius: 30px;
-  -webkit-transform: translate(-1px, 2px);
-  transform: translate(-1px, 2px);
+  border-radius: 35px;
+  -webkit-transform: translate(0, 1px);
+  transform: translate(0, 1px);
 }
 @media only screen and (max-width: 1023px) {
   .c-btn {
@@ -377,6 +380,8 @@ button {
     height: 36px;
     margin-left: auto;
     margin-top: 24px;
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
   }
 }
 .c-btn span {
@@ -391,8 +396,8 @@ button {
 @media only screen and (max-width: 1023px) {
   .c-btn span {
     font-size: 1.6rem;
-    margin-left: 4px;
-    letter-spacing: 3.4px;
+    margin-left: 10px;
+    letter-spacing: 3.5px;
   }
 }
 .c-btnarrow {
@@ -405,7 +410,7 @@ button {
     background-color: rgb(23, 107, 106);
     position: relative;
     border-radius: 8px;
-    margin-top: 15px;
+    margin-top: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -415,10 +420,15 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
   }
 }
 .c-point__img button {
   display: contents;
+}
+.c-point__img button :hover {
+  opacity: 0.7;
 }
 /*------------------------------------------------------------
 title
@@ -485,7 +495,7 @@ text
 @media only screen and (max-width: 1023px) {
   .c-point .c-text {
     font-size: 1.3rem;
-    margin-top: 16px;
+    margin-top: 18px;
     letter-spacing: 1.3px;
     line-height: 1.7;
     text-align: center;
@@ -513,7 +523,7 @@ text
 }
 @media only screen and (max-width: 1023px) {
   .c-columnitem .c-textlink {
-    text-decoration: underline;
+    border-bottom: 1px solid;
     font-size: 1.6rem;
     display: block;
     margin-left: auto;
@@ -731,21 +741,20 @@ img
 @media only screen and (max-width: 1023px) {
   .c-mainvisual .c-imgsp {
     margin: 0 auto;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    margin-top: 160px;
   }
 }
 .c-bannerimg {
   position: relative;
 }
-.c-bannersp {
-  display: none;
-  max-width: 250px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
 @media only screen and (max-width: 1023px) {
   .c-bannersp {
+    max-width: 250px;
+    margin: 0 auto;
     display: block;
-    margin-bottom: 0;
+    margin-bottom: 53px;
   }
 }
 .c-point__imgone {
@@ -775,6 +784,17 @@ img
 .c-point__imgseven {
   background-image: url("../../assets/img/point3-1.png");
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1023px) {
+  .c-point__imgseven .c-inner__title {
+    margin-top: 23px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .c-point__imgseven {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
 }
 .c-point__imgeight {
   background-image: url("../../assets/img/point3-2.png");
@@ -862,6 +882,10 @@ other
 .c-columnlist .u-mgcolsix {
   margin-left: -16px;
 }
+.c-deslink .u-transpoint {
+  -webkit-transform: translateY(9px);
+  transform: translateY(9px);
+}
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
@@ -876,6 +900,10 @@ Css of home page
   height: 670px;
   -webkit-transition: all 2s ease-out;
   transition: all 2s ease-out;
+}
+#menu-link .is-active {
+  opacity: 0.7;
+  color: #000;
 }
 .is-active {
   font-weight: 700;
@@ -907,10 +935,9 @@ Css of home page
   position: fixed;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
-  top: 57.4%;
+  top: 37%;
   right: 0;
   z-index: 2;
-  pointer-events: none;
 }
 .c-leafright.is-active {
   right: -40px;
@@ -918,9 +945,10 @@ Css of home page
 @media only screen and (max-width: 1023px) {
   .c-leafright {
     width: 77px;
-    top: 75.4%;
+    top: 77.6%;
     right: 6px;
     -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
     transform: rotate(-8deg);
   }
   .c-leafright.is-active {
@@ -979,17 +1007,11 @@ Css of home page
   top: 65px;
   left: 0;
   z-index: 3;
-  max-width: 200px;
   width: 100%;
   margin-top: 10px;
 }
 .c-nav li a {
   display: block;
-}
-@media only screen and (max-width: 1023px) {
-  .c-nav {
-    max-width: 767px;
-  }
 }
 .c-nav .c-input:checked ~ .l-overlay {
   display: block;
@@ -1000,7 +1022,6 @@ Css of home page
 .c-nav .c-input:checked ~ .c-navheader {
   display: block;
   -webkit-transform: translateX(0%);
-  transform: translateX(0%);
   transform: translateX(0%);
   opacity: 1;
 }
@@ -1026,13 +1047,14 @@ Css of home page
   display: block;
   line-height: 4;
 }
-.c-navlink {
+.c-navlinksp {
   height: 80px;
   border-bottom: 1px solid #3a5656;
 }
 .c-navlink__text {
   font-size: 2rem;
   line-height: 4;
+  text-align: center;
   font-weight: normal;
   letter-spacing: 1.8px;
   display: -webkit-box;
@@ -1045,7 +1067,6 @@ Css of home page
 }
 .c-navheader {
   display: none;
-  max-width: 1024px;
   width: 100%;
   padding: 30px;
   z-index: 111;
@@ -1060,10 +1081,11 @@ Css of home page
 .c-navlist {
   -webkit-transform: translateY(-9px);
   transform: translateY(-9px);
-}
-.c-navlist .is-active {
-  font-weight: 700;
-  color: #000;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  z-index: 3;
+  margin-top: 10px;
 }
 .c-navlist li {
   background-image: url("assets/img/nav.png");
@@ -1146,7 +1168,7 @@ Css of home page
 }
 @media only screen and (max-width: 1023px) {
   .c-product__feature {
-    margin-top: 19px;
+    margin-top: 20px;
     padding-bottom: 0;
     margin-bottom: 25px;
   }
@@ -1330,6 +1352,12 @@ Css of home page
   padding-bottom: 5px;
   border-bottom: 2px dotted rgb(85, 85, 85);
 }
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .c-products__nameonce {
+    left: 60.8%;
+    padding-left: 4px;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .c-products__nameonce {
     top: 31%;
@@ -1410,6 +1438,11 @@ Css of home page
   border-bottom: 2px dotted rgb(85, 85, 85);
   padding-left: 12px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .c-products__namefive {
+    left: 121px;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .c-products__namefive {
     top: 27px;
@@ -1428,6 +1461,12 @@ Css of home page
   padding-bottom: 4px;
   border-bottom: 2px dotted rgb(85, 85, 85);
   padding-left: 46px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .c-products__namesix {
+    left: 101px;
+    padding-left: 29px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .c-products__namesix {
@@ -1449,6 +1488,11 @@ Css of home page
   left: 10px;
   padding-right: 12px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .c-products__nameseven {
+    left: -11px;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .c-products__nameseven {
     top: 1px;
@@ -1468,6 +1512,11 @@ Css of home page
   top: 21px;
   left: -31px;
   padding-right: 28px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1130px) {
+  .c-products__nameeight {
+    left: -60px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .c-products__nameeight {
@@ -1613,7 +1662,7 @@ Css of home page
     line-height: 1.7;
     letter-spacing: 1.6px;
     width: 100%;
-    margin-top: 0;
+    margin-top: 14px;
     margin-left: 0;
     -webkit-transform: translate(0, 2px);
     transform: translate(0, 2px);
@@ -1677,12 +1726,12 @@ Css of home page
   display: flex;
   margin-left: -37px;
   margin-top: 41px;
-  max-width: 1100px;
   width: 100%;
   margin: 41px auto 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 0 15px;
 }
 @media only screen and (max-width: 1023px) {
   .c-storelist {
@@ -1696,15 +1745,22 @@ Css of home page
     row-gap: 26px;
   }
 }
-.c-storelist img {
+.c-storelist__link {
   border-radius: 20px;
-  max-width: 260px;
+  display: block;
   width: calc((100% - 60px) / 4);
-  width: 100%;
+  max-width: 260px;
 }
 @media only screen and (max-width: 1023px) {
-  .c-storelist img {
+  .c-storelist__link {
     width: calc(50% - 12px);
+  }
+}
+.c-storelist__img {
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .c-storelist__img {
     border-radius: 10px;
   }
 }
@@ -1717,16 +1773,14 @@ Css of home page
   position: relative;
   z-index: 1;
   display: none;
-  -webkit-transform: translateX(1px);
-  transform: translateX(1px);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 @media only screen and (max-width: 1023px) {
   .c-img__inner {
     padding: 20px 16px;
     max-width: 315px;
-    border-radius: 15px;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    border-radius: 14px;
   }
 }
 .c-inner__title {
@@ -1807,11 +1861,6 @@ Css of home page
     transform: translate(0, 18px);
   }
 }
-@media only screen and (max-width: 1023px) {
-  .c-qa {
-    padding-top: 6px;
-  }
-}
 .c-qa .c-qatitle {
   font-size: 3.6rem;
   color: rgb(23, 107, 106);
@@ -1836,7 +1885,7 @@ Css of home page
 @media only screen and (max-width: 1023px) {
   .c-qa .c-listitem {
     padding: 0;
-    margin-top: -23px;
+    margin-top: -26px;
   }
 }
 .c-qa .c-item {
@@ -1953,6 +2002,11 @@ Css of home page
 .c-column__leftimg {
   border-radius: 50px;
 }
+@media only screen and (max-width: 1023px) {
+  .c-column__leftimg {
+    border-radius: unset;
+  }
+}
 .c-column__right {
   padding: 23px 14px;
 }
@@ -1980,7 +2034,7 @@ Css of home page
 }
 .c-column__right h3 {
   font-size: 2.5rem;
-  line-height: 2.9rem;
+  line-height: 1;
   letter-spacing: 2.6px;
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
@@ -2010,10 +2064,10 @@ Css of home page
     font-size: 1.3rem;
     margin-top: 7px;
     letter-spacing: 1.3px;
-    -webkit-transform: translateX(-1px);
-    transform: translateX(-1px);
     line-height: 1.7;
     width: 100%;
+    -webkit-transform: translate(2px, -1px);
+    transform: translate(2px, -1px);
   }
 }
 .c-columnlist {
@@ -2021,9 +2075,8 @@ Css of home page
 }
 @media only screen and (max-width: 1023px) {
   .c-columnlist {
-    padding: 50px 0;
-    padding-top: 0;
     margin-top: 53px;
+    padding: 0;
   }
 }
 .c-columnitem {
@@ -2032,11 +2085,17 @@ Css of home page
   margin-bottom: 34px;
   position: relative;
 }
+.c-columnitem:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 @media only screen and (max-width: 1023px) {
   .c-columnitem {
     border-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 16px;
+    opacity: unset;
+    cursor: none;
   }
 }
 .c-columnitem:first-child .c-column__heading {
@@ -2053,8 +2112,8 @@ Css of home page
     padding: 0;
     margin-left: -20px;
     margin-top: 21px;
-    -webkit-transform: translate(0, -3px);
-    transform: translate(0, -3px);
+    -webkit-transform: translate(-4px, -2px);
+    transform: translate(-4px, -2px);
   }
 }
 @media only screen and (max-width: 1023px) {

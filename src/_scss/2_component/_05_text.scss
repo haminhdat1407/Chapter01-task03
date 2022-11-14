@@ -60,7 +60,7 @@ text
 .c-columnitem {
     .c-textlink {
         @include sp {
-            text-decoration: underline;
+            border-bottom: 1px solid;
             font-size: 1.6rem;
             display: block;
             margin-left: auto;
