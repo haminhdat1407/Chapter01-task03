@@ -76,29 +76,29 @@ module.exports = defineConfig(({ mode }) => {
 				},
 			}),
 			Controller(),
-			Imagemin({
-				gifsicle: {
-					optimizationLevel: 7,
-					interlaced: false,
-				},
-				optipng: {
-					optimizationLevel: 7,
-				},
-				jpegTran: {
-					progressive: true,
-				},
-				svgo: {
-					plugins: [
-						{
-							name: 'removeViewBox',
-						},
-						{
-							name: 'removeEmptyAttrs',
-							active: false,
-						},
-					],
-				},
-			}),
+			// Imagemin({
+			// 	gifsicle: {
+			// 		optimizationLevel: 7,
+			// 		interlaced: false,
+			// 	},
+			// 	optipng: {
+			// 		optimizationLevel: 7,
+			// 	},
+			// 	jpegTran: {
+			// 		progressive: true,
+			// 	},
+			// 	svgo: {
+			// 		plugins: [
+			// 			{
+			// 				name: 'removeViewBox',
+			// 			},
+			// 			{
+			// 				name: 'removeEmptyAttrs',
+			// 				active: false,
+			// 			},
+			// 		],
+			// 	},
+			// }),
 			Linter({
 				errorOverlay: true,
 				htmlhint: {

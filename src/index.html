@@ -41,8 +41,8 @@
           </label>
 
           <!-- MAV LIST SP -->
-          <ul>
-            <li class="c-navlinksp"><a class="c-navlink__text" href="#">トップ</a></li>
+          <ul class="c-navspmenu">
+            <li class="c-navlinksp"><a class="c-navlink__text" href="#home-page">トップ</a></li>
             <li class="c-navlinksp"><a class="c-navlink__text" href="#product-feature">毎日にハッカ油</a></li>
             <li class="c-navlinksp"><a class="c-navlink__text" href="#point">製品情報</a></li>
             <li class="c-navlinksp"><a class="c-navlink__text" href="#qa">Q&A</a></li>
@@ -51,24 +51,24 @@
           </ul>
         </nav>
       </div>
+
       <!-- NAV PC -->
     </div>
     <ul class="c-navlist" id="menu-link">
-      <li ><a href="#home-page" class="c-navlink is-active">トップ</a></li>
-      <li ><a  href="#product-feature">毎日にハッカ油</a></li>
-      <li ><a  href="#point">製品情報</a></li>
-      <li ><a  href="#qa">Q&A</a></li>
-      <li ><a  href="#column">ハッカ油コラム</a></li>
-      <li ><a  href="#footer">ハッカ油ムービー</a></li>
+      <li><a href="#home-page" class=" c-navlinka c-navlink is-active">トップ</a></li>
+      <li><a class="c-navlinka" href="#product-feature">毎日にハッカ油</a></li>
+      <li><a class="c-navlinka" href="#point">製品情報</a></li>
+      <li><a class="c-navlinka" href="#qa">Q&A</a></li>
+      <li><a class="c-navlinka" href="#column">ハッカ油コラム</a></li>
+      <li><a class="c-navlinka" href="#footer">ハッカ油ムービー</a></li>
     </ul>
 
     <div class="c-top">
       <section class="l-container">
         <!-- MAINVISUAL -->
-        <div class="c-mainvisual"  id="home-page">
+        <div class="c-mainvisual c-sectionpage" id="home-page">
           <picture class="c-mainvisual__img ">
-            <source media="(min-width: 1024px)" srcset="assets/img/mainvisual.png" >
-            <source media="(max-width: 1023px)" srcset="assets/img/bg-main--sp2.png" >
+            <source media="(max-width: 1023px)" srcset="assets/img/bg-main--sp2.png">
             <img class="c-imgsp" src="assets/img/mainvisual.png" alt="Banner Header ">
           </picture>
 
@@ -93,7 +93,7 @@
         </div>
 
         <!-- PRODUCT FEATURE -->
-        <div class="c-product__feature" id="product-feature">
+        <div class="c-product__feature c-sectionpage" id="product-feature">
           <p class="c-product__headingone">使い方いろいろ</p>
           <h2 class="c-product__headingtwo">毎日にハッカ油</h2>
           <div class="c-products">
@@ -167,7 +167,7 @@
       </section>
 
       <!-- POINT -->
-      <section class="c-point" id="point">
+      <section class="c-point c-sectionpage" id="point">
         <div class="l-wrapper">
 
           <!-- POINT 1 -->
@@ -204,8 +204,8 @@
                 </button>
               </div>
 
-              
-              <div class="c-point__img c-point__imgtwo">
+
+              <!-- <div class="c-point__img c-point__imgtwo">
                 <div class="c-img__inner">
                   <p class="c-inner__title">気分転換に</p>
                   <span class="c-inner__linepoint"></span>
@@ -227,7 +227,7 @@
                   </a>
                 </div>
                 <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
-              </div>
+              </div> -->
             </div>
 
           </div>
@@ -264,7 +264,7 @@
                 <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
               </div>
 
-              <div class="c-point__img  c-point__imgfive">
+              <!-- <div class="c-point__img  c-point__imgfive">
                 <div class="c-img__inner">
                   <p class="c-inner__title">花粉の季節に</p>
                   <span class="c-inner__linepoint"></span>
@@ -286,7 +286,7 @@
                 </div>
 
                 <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="気持ちリフレッシュ"></button>
-              </div>
+              </div> -->
             </div>
 
           </div>
@@ -324,7 +324,7 @@
                 <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="ハウスキーピングュ"></button>
               </div>
 
-              <div class="c-point__img c-point__imgeight">
+              <!-- <div class="c-point__img c-point__imgeight">
                 <div class="c-img__inner">
                   <p class="c-inner__title">窓ガラスに</p>
                   <span class="c-inner__linepoint"></span>
@@ -347,7 +347,7 @@
                 </div>
 
                 <button><img class="c-point__btn" src="assets/img/btn_more.png" alt="ハウスキーピング"></button>
-              </div>
+              </div> -->
             </div>
 
           </div>
@@ -355,7 +355,7 @@
         <div class="c-pointfooter">
           <p class="c-point__store">お買い求めは全国のドラッグストア<br class="sp-only">、またはこちらから</p>
           <div class="c-storelist">
-            <a href="#" target="_blank" class="c-storelist__link">
+            <a href="#" target="_blank" class="u-mgbottom  c-storelist__link">
               <img class="c-storelist__img" src="assets/img/store1.jpg" alt="Home Page">
             </a>
             <a href="#" target="_blank" class="c-storelist__link">
@@ -374,60 +374,59 @@
         </div>
       </section>
       <!-- Q&A -->
-      <section class="c-qa" id="qa">
+      <section class="c-qa c-sectionpage" id="qa">
         <div class="l-wrapper">
           <!-- Q&A -->
           <h2 class="c-qatitle">Q&A</h2>
-          <div class="c-listitem">
+          <dl class="c-listitem">
             <div class="c-item">
-              <div class="c-item__title">
+              <dt class="c-item__title">
                 <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
                 <p class="c-title">虫除け対策に直接体や環境に噴きかけても良いですか？</p>
-              </div>
-              <p class="c-item__content ">刺激が強過ぎる可能性がありますので、薄めて使用してください。また素材によっては変質(変色<br
-                  class="sp-only">)するおそれがありますので注意してください。</p>
+              </dt>
+              <dd class="c-item__content ">刺激が強過ぎる可能性がありますので、薄めて使用してください。また素材によっては変質(変色<br
+                  class="sp-only">)するおそれがありますので注意してください。</dd>
             </div>
             <div class="c-item">
-              <div class="c-item__title">
+              <dt class="c-item__title">
                 <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
                 <p class="c-title">体に使用する際の注意点は？</p>
-              </div>
-              <p class="c-item__content c-item__contenttwo">刺激作用があるため、目や目の周囲、粘膜等に付着しないように注意してください。</p>
+              </dt>
+              <dd class="c-item__content c-item__contenttwo">刺激作用があるため、目や目の周囲、粘膜等に付着しないように注意してください。</dd>
             </div>
             <div class="c-item pc-only">
-              <div class="c-item__title">
+              <dt class="c-item__title">
                 <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
                 <p class="c-title">ハッカ油アイテムを作る際に使用する量は紹介されている量を守らないといけませんか？</p>
-              </div>
-              <p class="c-item__content">紹介している量はあくまでも目安になります。ただし、これ以上の量を加えると刺激が強過ぎる可能性があるので注意してください。。</p>
+              </dt>
+              <dd class="c-item__content">紹介している量はあくまでも目安になります。ただし、これ以上の量を加えると刺激が強過ぎる可能性があるので注意してください。。</dd>
             </div>
             <div class="c-item pc-only">
-              <div class="c-item__title">
+              <dt class="c-item__title">
                 <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
                 <p class="c-title">使用期限はどのくらいですか？</p>
-              </div>
-              <p class="c-item__content">パッケージ裏面に賞味期限を記載しています。遮光して、涼しい所に保管してください。</p>
+              </dt>
+              <dd class="c-item__content">パッケージ裏面に賞味期限を記載しています。遮光して、涼しい所に保管してください。</dd>
             </div>
             <div class="c-item pc-only">
-              <div class="c-item__title">
+              <dt class="c-item__title">
                 <img class="c-icon" src="assets/img/iconq&a.png" alt="Q&A">
                 <p class="c-title">ハッカ油は何からできたものですか？</p>
-              </div>
-              <p class="c-item__content">ハッカ油とはハッカソウというミントを乾燥させて抽出した植物油のことです。</p>
+              </dt>
+              <dd class="c-item__content">ハッカ油とはハッカソウというミントを乾燥させて抽出した植物油のことです。</dd>
             </div>
-          </div>
+          </dl>
         </div>
       </section>
+
       <!-- Column -->
-      <section class="c-column">
+      <section class="c-column c-sectionpage" id="column">
         <div class="l-wrapper">
           <div class="c-column__banner">
             <a href="#">
               <picture>
-                <source media="(min-width: 1024px)" class="c-column__leftimg" srcset="assets/img/banner-columm.png"
-                  >
-                <source media="(max-width: 1023px)" class="c-bannerimg" srcset="assets/img/banner-columm--sp.png"
-                  >
+                <!-- <source media="(min-width: 1024px)" class="c-column__leftimg" srcset="assets/img/banner-columm.png"> -->
+                <source media="(max-width: 1023px)" class="c-bannerimg" srcset="assets/img/banner-columm--sp.png">
                 <img class="c-column__leftimg" src="assets/img/banner-columm.png" alt="Column">
               </picture>
 
@@ -438,8 +437,8 @@
             </a>
 
           </div>
-          <div class="c-columnlist" >
-            <div class="c-columnitem" id="column">
+          <div class="c-columnlist"  >
+            <div class="c-columnitem" >
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
@@ -478,7 +477,7 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column10.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column10.png">
                     <source media="(max-width: 1023px)" srcset="assets/img/column10--sp.png">
                     <img src="assets/img/column10.png" alt="万能だからこそ知っておこう
                     ハッカ油を安全に使うためのルール">
@@ -508,8 +507,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column9.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column9--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column9.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column9--sp.png">
                     <img src="assets/img/column9.png" alt="涼しいオアシスタイム
                     ハッカ油の冷却パワーを上手に使おう">
                   </picture>
@@ -538,7 +537,7 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column8.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column8.png">
                     <source media="(max-width: 1023px)" srcset="assets/img/column8--sp.png">
                     <img src="assets/img/column8.png" alt="気分転換の強い味方
                     ハッカ油でリラックス&リフレッシュ">
@@ -567,8 +566,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column7.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column7--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column7.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column7--sp.png">
                     <img src="assets/img/column7.png" alt="嫌な匂いはサヨウナラ、ブーツや靴などに
                     ハッカ油の消臭マジック！">
                   </picture>
@@ -596,8 +595,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column6.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column6-sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column6.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column6-sp.png">
                     <img src="assets/img/column6.png" alt="香りと抗菌のダブルパワー
                     衣類がハッカ油でよみがえる！？">
                   </picture>
@@ -626,8 +625,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column5.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column5-sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column5.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column5-sp.png">
                     <img src="assets/img/column5.png" alt="いつでもどこでもサッと使える
                     ハッカ油スプレーで携帯ハッカ油を始めよう">
                   </picture>
@@ -655,8 +654,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column4.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column4--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column4.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column4--sp.png">
                     <img src="assets/img/column4.png" alt="使わないなんてもったいない
                     ハッカ油は万能ハウスクリーナー">
                   </picture>
@@ -684,8 +683,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column3.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column3--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column3.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column3--sp.png">
                     <img src="assets/img/column3.png" alt="おうちでサロン気分
                     ハッカ油で楽しいバスタイム">
                   </picture>
@@ -713,8 +712,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column2.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column2--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column2.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column2--sp.png">
                     <img src="assets/img/column2.png" alt="マスクにシュッシュと一噴き
                     ハッカ油で上手に生活管理！">
                   </picture>
@@ -743,8 +742,8 @@
               <a href="#">
                 <div class="c-column__heading">
                   <picture class="c-column__left">
-                    <source media="(min-width: 1024px)" srcset="assets/img/column1.png" >
-                    <source media="(max-width: 1023px)" srcset="assets/img/column1--sp.png" >
+                    <source media="(min-width: 1024px)" srcset="assets/img/column1.png">
+                    <source media="(max-width: 1023px)" srcset="assets/img/column1--sp.png">
                     <img src="assets/img/column1.png" alt="害虫も怖くない
                     さわやかハッカ油で虫除け対策！">
                   </picture>
@@ -774,13 +773,12 @@
 
 
       <!-- FOOTER -->
-      <footer class="c-footer" id="footer">
+      <footer class="c-footer c-sectionpage" id="footer">
         <div class="l-wrapper">
           <a href="#">
             <picture>
               <source media="(min-width: 1024px)" srcset="assets/img/BannerFooter.png">
-              <source media="(max-width: 1023px)" srcset="assets/img/BannerFooter--sp.png" class="c-bannersp " 
-               >
+              <source media="(max-width: 1023px)" srcset="assets/img/BannerFooter--sp.png" class="c-bannersp ">
               <img src="assets/img/BannerFooter.png" class="c-bannersp" alt="Home Page">
             </picture>
           </a>
@@ -800,7 +798,7 @@
               </p>
             </div>
             <div class="c-footer__right">
-              <a href="#home-page"> <img src="assets/img/logo_kenei.png" alt="Home Page"></a>
+              <a href="#home-page"> <img src="assets/img/logo_kenei.png" alt="健栄製薬の"></a>
               <p class="c-footer__textlogo">©KENEI Pharmaceutical</p>
             </div>
           </div>

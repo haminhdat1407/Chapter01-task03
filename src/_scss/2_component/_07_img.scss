@@ -67,7 +67,7 @@ img
     &__imgright {
         width: 180px;
         position: absolute;
-        top: 74%;
+        top: 54%;
         right: 0;
     }
 }
@@ -224,9 +224,14 @@ img
 
 .c-mainvisual {
     .c-imgsp {
+        // padding: 0 15px;
         @include sp {
             margin: 0 auto;
             transform: translateY(-15px);
+            // margin-top: 160px;
+            // padding: 0;
+        }
+        @include sp2 {
             margin-top: 160px;
         }
     }
@@ -277,6 +282,14 @@ img
     &__imgfive {
         background-image: url("../../assets/img/point2-2.png");
         background-repeat: no-repeat;
+
+        .c-inner {
+            &__nav {
+                @include sp {
+                    transform: translateY(40px);
+                }
+            }
+        }
     }
 
     &__imgsix {

@@ -27,6 +27,11 @@
     }
 }
 
+@mixin sp2 {
+    @media only screen and (max-width: 376px) {
+        @content;
+    }
+}
 
 
 

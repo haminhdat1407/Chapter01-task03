@@ -30,3 +30,9 @@ other
     }
    
 }
+
+.u-mgbottom {
+    @include sp {
+        padding-bottom: 26px;
+    }
+}

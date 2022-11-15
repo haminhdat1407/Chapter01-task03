@@ -8,13 +8,6 @@ $(document).ready(function () {
     $('.c-input').first().trigger('click');
   })
 
-  // Active Nav
-  // $('.c-navlist li a').click(function (e) {
-  //   $('.c-navlist li.is-active').removeClass('is-active');
-
-  //   var $parent = $(this).parent();
-  //   $parent.addClass('is-active');
-  // });
 
   // Button POINT
   $('.c-point__btn').click(function () {
@@ -38,6 +31,8 @@ $(document).ready(function () {
     }
   })
 
+  $(document).on("scroll", onScroll);
+  
   //Scroll leaf and drop
   $(window).scroll(function () {
     if ($(this).scrollTop() > 5) {
@@ -50,35 +45,42 @@ $(document).ready(function () {
       $('.c-leafright').removeClass('is-active');
     }
   });
+  
+  //Active menu when scroll
+//   $(window).scroll(function () {
+    
+//     var scrollDistance = $(window).scrollTop() + 500;
+//     $('.c-sectionpage').each(function (i) {
+//         if ($(this).position().top <= scrollDistance) {
+//             $('.c-navlinka').removeClass('is-active');
+//             $('.c-navlinka').eq(i).addClass('is-active');
+//         }
+//     });
+// }).scroll();
 
+//active menu when click
+$('a[href^="#"]').on('click', function (e) {
+  e.preventDefault();
+  $(document).off("scroll");
 
-  //Active Menu When Scroll
-  $(document).on("scroll", onScroll);
+  $('a').each(function () {
+    $(this).removeClass('is-active');
+  })
+  $(this).addClass('is-active');
 
-  //smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-
-    $('a').each(function () {
-      $(this).removeClass('is-active');
-    })
-    $(this).addClass('is-active');
-
-    var target = this.hash, 
-    menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top - 10
-    },'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-    });
+  var target = this.hash, 
+  menu = target;
+  $target = $(target);
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+  },'swing', function () {
+    window.location.hash = target;
+    $(document).on("scroll", onScroll);
   });
 });
 
 function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
+  var scrollPos = $(document).scrollTop()+ 400;
   $('#menu-link a').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
@@ -91,4 +93,7 @@ function onScroll(event) {
     }
   });
 }
+
+});
+
 
